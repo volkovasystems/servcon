@@ -81,13 +81,13 @@ var servcon = function servcon( option ){
 	let environment = local;
 	let type = "local";
 	if( parameter.staging ||
-		process.NODE_ENV == "staging" )
+		process.env.NODE_ENV == "staging" )
 	{
 		environment = staging;
 		type = "staging";
 
 	}else if( parameter.production ||
-		process.NODE_ENV == "production" )
+		process.env.NODE_ENV == "production" )
 	{
 		environment = production;
 		type = "production";
