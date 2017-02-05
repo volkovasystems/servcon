@@ -5,7 +5,7 @@
 		The MIT License (MIT)
 		@mit-license
 
-		Copyright (@c) 2016 Richeve Siodina Bebedor
+		Copyright (@c) 2017 Richeve Siodina Bebedor
 		@email: richeve.bebedor@gmail.com
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,15 +47,28 @@
 
 	@include:
 		{
-			"yargs": "yargs"
+			"harden": "harden",
+			"protype": "protype",
+			"truly": "truly",
+			"yarg": "yargs"
 		}
 	@end-include
 */
 
-var yargs = require( "yargs" );
+const harden = require( "harden" );
+const protype = require( "protype" );
+const truly = require( "truly" );
 
-var servcon = function servcon( option ){
+harden( "LOCAL", "local" );
+harden( "STAGING", "staging" );
+harden( "PRODUCTION", "production" );
+
+const servcon = function servcon( option ){
 	option = option || { };
+
+	if( !protype( option, OBJECT ) ){
+		option = { };
+	}
 
 	let parameter = require( "yargs" ).argv;
 	let service = parameter.service;
@@ -72,26 +85,27 @@ var servcon = function servcon( option ){
 	let local = option.local || base;
 	let staging = option.staging || base;
 	let production = option.production || base;
-	if( service ){
+	if( truly( service ) && protype( service, STRING ) ){
 		local = option.local[ service ] || local;
 		staging = option.staging[ service ] || staging;
 		production = option.production[ service ] || production;
 	}
 
 	let environment = local;
-	let type = "local";
-	if( parameter.staging ||
-		process.env.NODE_ENV == "staging" )
-	{
+	let type = LOCAL;
+	if( parameter.staging || process.env.NODE_ENV === STAGING ){
 		environment = staging;
-		type = "staging";
+		type = STAGING;
 
-	}else if( parameter.production ||
-		process.env.NODE_ENV == "production" )
-	{
+	}else if( parameter.production || process.env.NODE_ENV === PRODUCTION ){
 		environment = production;
-		type = "production";
+		type = PRODUCTION;
 	}
+
+	local.server = local.server || { };
+	staging.server = staging.server || { };
+	production.server = production.server || { };
+	environment.server = environment.server || { };
 
 	return {
 		"LOCAL_PROTOCOL": local.server.protocol,
