@@ -50,6 +50,7 @@
 			"harden": "harden",
 			"protype": "protype",
 			"truly": "truly",
+			"truu": "truu",
 			"yarg": "yargs"
 		}
 	@end-include
@@ -58,6 +59,8 @@
 const harden = require( "harden" );
 const protype = require( "protype" );
 const truly = require( "truly" );
+const truu = require( "truu" );
+const yarg = require( "yargs" );
 
 harden( "LOCAL", "local" );
 harden( "STAGING", "staging" );
@@ -70,7 +73,7 @@ const servcon = function servcon( option ){
 		option = { };
 	}
 
-	let parameter = require( "yargs" ).argv;
+	let parameter = yarg.argv;
 	let service = parameter.service;
 
 	let base = {
@@ -82,13 +85,14 @@ const servcon = function servcon( option ){
 		}
 	};
 
-	let local = option.local || base;
-	let staging = option.staging || base;
-	let production = option.production || base;
+	let local = truu( option.local )? option.local : base;
+	let staging = truu( option.staging )? option.staging : base;
+	let production = truu( option.production )? option.production : base;
+
 	if( truly( service ) && protype( service, STRING ) ){
-		local = option.local[ service ] || local;
-		staging = option.staging[ service ] || staging;
-		production = option.production[ service ] || production;
+		local = truu( option.local[ service ] )? option.local[ service ] : local;
+		staging = truu( option.staging[ service ] )? option.staging[ service ] : staging;
+		production = truu( option.production[ service ] )? option.production[ service ] : production;
 	}
 
 	let environment = local;
@@ -102,10 +106,10 @@ const servcon = function servcon( option ){
 		type = PRODUCTION;
 	}
 
-	local.server = local.server || { };
-	staging.server = staging.server || { };
-	production.server = production.server || { };
-	environment.server = environment.server || { };
+	local.server = truu( local.server )? local.server : { };
+	staging.server = truu( staging.server )? staging.server : { };
+	production.server = truu( production.server )? production.server : { };
+	environment.server = truu( environment.server )? environment.server : { };
 
 	return {
 		"LOCAL_PROTOCOL": local.server.protocol,

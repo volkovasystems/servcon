@@ -1,6 +1,6 @@
 {
   "name": "servcon",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Server base constant configuration.",
   "main": "servcon.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "harden": "^0.14.0",
     "protype": "^0.14.0",
     "truly": "^0.9.0",
+    "truu": "^0.7.0",
     "yargs": "^6.6.0"
   }
 }
