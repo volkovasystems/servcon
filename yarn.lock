@@ -6,15 +6,15 @@ ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
 
-arkount@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/arkount/-/arkount-0.3.0.tgz#b97d2f0114192818fa6dfd5b6ec78ca193f6090d"
+arkount@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/arkount/-/arkount-0.4.0.tgz#03f96642e972fb764eeb1284414284458552f3d3"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
-    raze "^0.23.0"
-    truly "^0.16.0"
-    wichevr "^0.5.0"
+    doubt "^0.23.0"
+    raze "^0.24.0"
+    truly "^0.17.0"
+    wichevr "^0.6.0"
 
 babel-runtime@^6.23.0:
   version "6.23.0"
@@ -31,12 +31,12 @@ camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
-cemento@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.14.0.tgz#c8de6bc16c4db7bf1d963563fcec21cf855b6c74"
+cemento@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.15.0.tgz#77fe5818c3c67975d47f974df052bea9739ff5a5"
   dependencies:
     babel-runtime "^6.23.0"
-    harden "^0.19.0"
+    harden "^0.21.0"
     kount "^0.10.0"
 
 circular-json@^0.3.1:
@@ -63,17 +63,17 @@ decamelize@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-doubt@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.22.0.tgz#46461c0d118bb52e09b640fa59fa973bdfe49d4c"
+doubt@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.23.0.tgz#76fd9397a0b91225e570f9a585875f73e4c56227"
   dependencies:
     babel-runtime "^6.23.0"
-    cemento "^0.14.0"
+    cemento "^0.15.0"
     circular-json "^0.3.1"
-    falzy "^0.16.0"
-    harden "^0.19.0"
+    falzy "^0.17.0"
+    harden "^0.21.0"
     khount "^0.0.0"
-    protype "^0.20.0"
+    protype "^0.21.0"
     stringe "^0.1.0"
 
 error-ex@^1.2.0:
@@ -82,20 +82,20 @@ error-ex@^1.2.0:
   dependencies:
     is-arrayish "^0.2.1"
 
-falzy@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.16.0.tgz#32f9e193128d23903a5dad3ceafc0ca89550b6b2"
+falzy@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.17.0.tgz#228535d605ae8d1a0ccd44f185d7534636a166fe"
   dependencies:
     babel-runtime "^6.23.0"
-    protype "^0.20.0"
+    protype "^0.21.0"
 
-filled@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/filled/-/filled-0.16.0.tgz#bb869ed901b9bb04e5d94b872636f42be1723658"
+filled@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/filled/-/filled-0.18.0.tgz#4d538ea019512c668d7f9052e42eda519cf538df"
   dependencies:
-    arkount "^0.3.0"
+    arkount "^0.4.0"
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
+    doubt "^0.23.0"
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -112,15 +112,15 @@ graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-harden@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/harden/-/harden-0.19.0.tgz#04385f850ec8eac62a40e5553e245e0286fe2426"
+harden@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/harden/-/harden-0.21.0.tgz#c3ca5e255e440fc5e6e996acb21515bb892bff49"
   dependencies:
     babel-runtime "^6.23.0"
 
 hosted-git-info@^2.1.4:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.2.0.tgz#7a0d097863d886c0fabbdcd37bf1758d8becf8a5"
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.4.1.tgz#4b0445e41c004a8bd1337773a4ff790ca40318c8"
 
 invert-kv@^1.0.0:
   version "1.0.0"
@@ -227,21 +227,21 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
-protype@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/protype/-/protype-0.20.0.tgz#286647abdbd527f067754debae77bdc38d449a5e"
+protype@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/protype/-/protype-0.21.0.tgz#958452abbaa6daaa8e79386179b220477e2dca7c"
   dependencies:
     babel-runtime "^6.23.0"
-    cemento "^0.14.0"
-    harden "^0.19.0"
+    cemento "^0.15.0"
+    harden "^0.21.0"
 
-raze@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/raze/-/raze-0.23.0.tgz#88482e629ff05811edc324029118bc02d267d623"
+raze@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.24.0.tgz#f7590d561faf0611ab8b2c651d7973b6d283864b"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
-    harden "^0.19.0"
+    doubt "^0.23.0"
+    harden "^0.21.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
@@ -318,33 +318,33 @@ strip-bom@^2.0.0:
   dependencies:
     is-utf8 "^0.2.0"
 
-stuffed@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/stuffed/-/stuffed-0.18.0.tgz#1611b93d1fe810f034eab32eed50c3d4d99855b5"
+stuffed@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/stuffed/-/stuffed-0.19.0.tgz#bf9e38a50d67c64fd5b34842620ac4f97b713f00"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
+    doubt "^0.23.0"
     kount "^0.10.0"
-    protype "^0.20.0"
-    truly "^0.16.0"
+    protype "^0.21.0"
+    truly "^0.17.0"
 
-truly@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/truly/-/truly-0.16.0.tgz#ba0409c570c95cdc78bfff2eef534dcf789b1024"
+truly@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/truly/-/truly-0.17.0.tgz#3b2c6883d95285d9d3a22fd5d2588d8b266e06c9"
   dependencies:
     babel-runtime "^6.23.0"
-    protype "^0.20.0"
+    protype "^0.21.0"
 
-truu@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/truu/-/truu-0.20.0.tgz#3acd0f4f94d1d87a0736534cd1d3d443a9ff4df6"
+truu@^0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/truu/-/truu-0.22.0.tgz#bf7ccf324a171b5bdd1cb50e06cda9a7d2f8efa1"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
-    filled "^0.16.0"
-    protype "^0.20.0"
-    stuffed "^0.18.0"
-    truly "^0.16.0"
+    doubt "^0.23.0"
+    filled "^0.18.0"
+    protype "^0.21.0"
+    stuffed "^0.19.0"
+    truly "^0.17.0"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
@@ -357,13 +357,13 @@ which-module@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
 
-wichevr@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/wichevr/-/wichevr-0.5.0.tgz#da92920bb0cd3dfa885e9ced854106d841327f98"
+wichevr@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/wichevr/-/wichevr-0.6.0.tgz#bd5d0c241336d8636822efdd666b9ff7d44c961d"
   dependencies:
     babel-runtime "^6.23.0"
-    raze "^0.23.0"
-    truly "^0.16.0"
+    raze "^0.24.0"
+    truly "^0.17.0"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
